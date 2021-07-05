@@ -32,10 +32,3 @@
 ;(defn aggrid-boxed [{:keys [size] :as spec}]
 ;  [aggrid-styled (merge (container-style (or size :small)) ;{:width "400px" :max-width "400px" :height "300px"}
 ;                        spec)])
-
-; https://js.cytoscape.org/
-; https://github.com/plotly/react-cytoscapejs
-
-; other options:
-; http://www.graphviz.org/
-; geschichte
