@@ -1,0 +1,29 @@
+{:name "ui-cytoscape"
+ :clj-require []
+:theme {:available  {}
+        :current {}}
+ :cljs-namespace [pinkgorilla.cytoscape.cytoscape]
+ :cljs-bindings {'cytoscape pinkgorilla.cytoscape.cytoscape/cytoscape-boxed}
+ :cljs-ns-bindings {}
+ :pinkie {:p/cytoscape pinkgorilla.cytoscape.cytoscape/cytoscape-boxed}
+
+ ; modules not yet via loader
+ :modules {}
+
+ :snippets [; cytoscape
+            {:type :pinkie
+             :category :cytoscape
+             :id :cytoscape1
+             :filename "snippets/cytoscape/cytoscape1.edn"}
+            {:type :pinkie
+             :category :cytoscape
+             :id :cytoscape2
+             :filename "snippets/cytoscape/cytoscape2.edn"}
+            {:type :pinkie
+             :category :cytoscape
+             :id :cytoscape3
+             :filename "snippets/cytoscape/cytoscape3.edn"}
+            {:type :pinkie
+             :category :cytoscape
+             :id :cytoscape4
+             :filename "snippets/cytoscape/cytoscape4.edn"}]}
