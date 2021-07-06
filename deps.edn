@@ -2,7 +2,9 @@
          "resources" ; snippets
          ]
  :deps
- {org.clojure/clojure    {:mvn/version "1.10.3"}}
+ {org.clojure/clojure    {:mvn/version "1.10.3"}
+  org.pinkgorilla/pinkie {:mvn/version "0.3.5"}} ; box
+
  :aliases
  {;https://github.com/applied-science/deps-library
   :release

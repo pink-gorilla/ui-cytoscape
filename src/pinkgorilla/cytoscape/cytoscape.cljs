@@ -5,7 +5,7 @@
    ["cytoscape-cose-bilkent" :as cose-bilkent]
    ["cytoscape-dagre" :as dagre]
    ["react-cytoscapejs" :as CytoscapeComponent]
-   [pinkgorilla.cytoscape.box :refer [container-style]]))
+   [pinkie.box :refer [apply-style]]))
 
 (.use cytoscope cose-bilkent)
 (.use cytoscope dagre);
@@ -18,17 +18,5 @@
 (defn ^{:category :data}
   cytoscape-boxed
   ""
-  [data]
-  #_[box {:s :small
-          :render cytoscape
-          :data data}]
-  ;[:div {:style {:width "600px" :max-width "600px" :height "500px"}}
-  [cytoscape (merge data
-                    {:style {:width "600px" :max-width "600px" :height "500px"}})]
-
-   ;]
-  )
-
-;(defn aggrid-boxed [{:keys [size] :as spec}]
-;  [aggrid-styled (merge (container-style (or size :small)) ;{:width "400px" :max-width "400px" :height "300px"}
-;                        spec)])
+  [props]
+  [cytoscape (apply-style props)])
