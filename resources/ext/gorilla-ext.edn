@@ -6,10 +6,7 @@
  :cljs-bindings {'cytoscape pinkgorilla.cytoscape.cytoscape/cytoscape-boxed}
  :cljs-ns-bindings {}
  :pinkie {:p/cytoscape pinkgorilla.cytoscape.cytoscape/cytoscape-boxed}
-
- ; modules not yet via loader
- :modules {}
-
+ :lazy true
  :snippets [; cytoscape
             {:type :pinkie
              :category :cytoscape
