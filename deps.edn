@@ -41,7 +41,7 @@
 
   :goldly
   {:extra-deps {org.pinkgorilla/goldly {:mvn/version "RELEASE"
-                                        :exclusions [org.pinkgorilla/gorilla-ui] 
+                                        ;:exclusions [org.pinkgorilla/ui-gorilla] 
                                         }}
    :exec-fn goldly-server.app/goldly-server-run!
    :exec-args {:profile "watch"
