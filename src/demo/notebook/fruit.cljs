@@ -1,4 +1,6 @@
-[:p/cytoscape
+
+^:R
+['user/cytoscape
  {:box :sm
   :stylesheet [{:selector "node"
                 :style {:label "data(label)"}}]

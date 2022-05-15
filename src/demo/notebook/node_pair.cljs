@@ -1,4 +1,5 @@
-[:p/cytoscape
+^:R
+['user/cytoscape
  {:stylesheet [{:selector "node"
                 :style {:width 20
                         :height 20

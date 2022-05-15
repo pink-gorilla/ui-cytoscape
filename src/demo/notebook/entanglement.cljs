@@ -1,4 +1,5 @@
-[:p/cytoscape
+^:R
+['user/cytoscape
  {:stylesheet [{:selector "node"
                 :style {:background-color "#ad1a66"}}
                {:selector "edge"
