@@ -1,5 +1,9 @@
+(ns demo.notebook.cytoscape-node-pair
+  (:require
+   [ui.cytoscape :refer [cytoscape]]))
+
 ^:R
-['user/cytoscape
+[cytoscape
  {:stylesheet [{:selector "node"
                 :style {:width 20
                         :height 20

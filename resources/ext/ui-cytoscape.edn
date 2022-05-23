@@ -1,12 +1,8 @@
 {:name "ui-cytoscape"
  ;build
  :lazy true
- :cljs-namespace [pinkgorilla.cytoscape.cytoscape]
- :cljs-bindings {'cytoscape pinkgorilla.cytoscape.cytoscape/cytoscape-boxed}
- :cljs-ns-bindings {}
+ :cljs-namespace [ui.cytoscape]
+ :cljs-ns-bindings {'ui.cytoscape {'cytoscape ui.cytoscape/cytoscape-boxed}}
  ;theme
- :theme {:available  {}
-         :current {}}
- ;runtime
- :clj-require []
- }
+ :theme {:available {}
+         :current {}}}

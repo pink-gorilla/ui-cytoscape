@@ -1,4 +1,4 @@
-(ns pinkgorilla.cytoscape.cytoscape
+(ns ui.cytoscape
   (:require
    [re-frame.core :as rf]
    ["cytoscape" :as cytoscope]

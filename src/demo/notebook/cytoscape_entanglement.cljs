@@ -1,5 +1,9 @@
+(ns demo.notebook.cytoscape-entanglement
+  (:require
+   [ui.cytoscape :refer [cytoscape]]))
+
 ^:R
-['user/cytoscape
+[cytoscape
  {:stylesheet [{:selector "node"
                 :style {:background-color "#ad1a66"}}
                {:selector "edge"

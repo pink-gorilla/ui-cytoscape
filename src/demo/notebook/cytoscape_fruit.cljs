@@ -1,6 +1,9 @@
+(ns demo.notebook.cytoscape-fruit
+  (:require
+   [ui.cytoscape :refer [cytoscape]]))
 
 ^:R
-['user/cytoscape
+[cytoscape
  {:box :sm
   :stylesheet [{:selector "node"
                 :style {:label "data(label)"}}]
