@@ -12,24 +12,13 @@
 ## Demo
 
 ```
-clojure -X:goldly
+ clojure -X:webly:npm-install
+ clojure -X:webly:compile
+ clojure -X:webly:run
 ```
 
 Navigate your webbrowser to port 8000. 
-Snippets are in `running systems` / `snippet-registry`
 
-## In Goldly as a ui extension
-
-In deps.edn add ui-cytoscape as dependency and add goldly alias
-
-```
-:goldly
-  {:extra-deps {org.pinkgorilla/goldly {:mvn/version "RELEASE"}
-               {org.pinkgorilla/ui-cytoscape {:mvn/version "0.0.2"}}
-   :exec-fn goldly-server.app/goldly-server-run!
-   :exec-args {:profile "watch"
-               :config {:goldly {}}}}
-```
 
 
 
