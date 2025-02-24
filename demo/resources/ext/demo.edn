@@ -1,0 +1,10 @@
+{:name "demo"
+ :lazy true
+ :depends-on #{:ui-cytoscape}
+ :cljs-namespace [demo.page]
+ :cljs-ns-bindings {'demo.page {'page  demo.page/page}}
+
+ :cljs-routes {""  demo.page/page}
+
+;
+ }

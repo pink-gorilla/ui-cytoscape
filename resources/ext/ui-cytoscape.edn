@@ -2,7 +2,6 @@
  ;build
  :lazy true
  :cljs-namespace [ui.cytoscape]
- :cljs-ns-bindings {'ui.cytoscape {'cytoscape-boxed ui.cytoscape/cytoscape-boxed
-                                   'cytoscape ui.cytoscape/cytoscape}}
+ :cljs-ns-bindings {'ui.cytoscape {'cytoscape ui.cytoscape/cytoscape}}
  ;
  }

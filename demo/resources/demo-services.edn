@@ -1,0 +1,13 @@
+{:modular (modular.system/modular-env)  ; {:profile "jetty"  :config ["demo.edn" "secrets.edn"]}
+ :components
+ {:config {:start (modular.config/load-config! (:config #ref [:modular]))}
+  :exts {:start (extension/discover)}
+    
+  :webly {:start (webly.spa/start-webly
+                  {:exts (clip/ref :exts)}
+                  (deref (clip/ref :config))
+                  (:profile #ref [:modular]))
+          :stop (webly.spa/stop-webly this)}
+ 
+;  
+  }}

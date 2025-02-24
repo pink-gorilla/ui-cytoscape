@@ -1,0 +1,28 @@
+{:paths ["src"
+         "resources"
+         ]
+ :deps
+ {org.pinkgorilla/ui-cytoscape {:local/root ".." :deps/manifest :deps}
+  org.pinkgorilla/webly {:mvn/version "0.9.716"}}
+
+ :aliases
+ {; demo ui
+  :webly {:exec-fn webly.spa/webly-build
+          :exec-args {:config []
+                      :profile "npm-install"}}
+
+  :watch {:exec-fn modular.system/start!
+          :exec-args {:profile "watch"
+                      :config  [{}]
+                      :services "demo-services.edn"}}
+
+  :npm-install {:exec-args {:profile "npm-install"}}
+  :compile {:exec-args {:profile "compile"}}
+  
+
+  :run {:exec-fn modular.system/start!
+        :exec-args {:profile "jetty"
+                    :config  [{}]
+                    :services "demo-services.edn"}}
+
+  }}

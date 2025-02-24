@@ -31,10 +31,6 @@ jobs:
       if: ${{ matrix.os != 'windows-latest' }}
       run: clojure -M:cljfmt
       shell: bash
-    - name: Install dependencies
-      run: |
-        clojure -X:webly:npm-install
-        ./scripts/copy_res.sh
     - name: Release
       if: success()
       # if: github.event_name == 'push'

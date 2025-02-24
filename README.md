@@ -12,12 +12,14 @@
 ## Demo
 
 ```
+ cd demo
  clojure -X:webly:npm-install
  clojure -X:webly:compile
  clojure -X:webly:run
+ clojure -X:webly:watch
 ```
 
-Navigate your webbrowser to port 8000. 
+Navigate your webbrowser to port 8080. 
 
 
 

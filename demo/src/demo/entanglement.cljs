@@ -1,10 +1,12 @@
-(ns demo.notebook.cytoscape-entanglement
+(ns demo.entanglement
   (:require
    [ui.cytoscape :refer [cytoscape]]))
 
-^:R
+(defn demo-entanglement []
 [cytoscape
- {:stylesheet [{:selector "node"
+ {:style {:width "200px"
+          :height "200px"}
+  :stylesheet [{:selector "node"
                 :style {:background-color "#ad1a66"}}
                {:selector "edge"
                 :style {"width" 3
@@ -130,4 +132,4 @@
              {:data {:id "e66"  :sbgnclass "production" "sbgncardinality" 0 "source" "glyph33" "target" "glyph35" "portsource" "glyph33" "porttarget" "glyph35"} :position {} :group "edges" :removed false :selected false :selectable true :locked false :grabbed false :grabbable true :classes ""}
              {:data {:id "e67"  :sbgnclass "production" "sbgncardinality" 0 "source" "glyph13" "target" "glyph22" "portsource" "glyph13" "porttarget" "glyph22"} :position {} :group "edges" :removed false :selected false :selectable true :locked false :grabbed false :grabbable true :classes ""}
              {:data {:id "e68"  :sbgnclass "production" "sbgncardinality" 0 "source" "glyph17" "target" "glyph6" "portsource" "glyph17" "porttarget" "glyph6"} :position {} :group "edges" :removed false :selected false :selectable true :locked false :grabbed false :grabbable true :classes ""}
-             {:data {:id "e69"  :sbgnclass "production" "sbgncardinality" 0 "source" "glyph25" "target" "glyph27" "portsource" "glyph25" "porttarget" "glyph27"} :position {} :group "edges" :removed false :selected false :selectable true :locked false :grabbed false :grabbable true :classes ""}]}]
+             {:data {:id "e69"  :sbgnclass "production" "sbgncardinality" 0 "source" "glyph25" "target" "glyph27" "portsource" "glyph25" "porttarget" "glyph27"} :position {} :group "edges" :removed false :selected false :selectable true :locked false :grabbed false :grabbable true :classes ""}]}])
